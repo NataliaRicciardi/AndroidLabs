@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="fill"
-        android:text="I love Android"
+        android:text="@string/original_text"
         android:textSize="30dp"/>
 
     <ImageButton
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="fill"
-        android:text="Switch on/off" />
+        android:text="@string/switch_onoff" />
 
     <Button
         android:id="@+id/pressbtn"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="fill"
-        android:text="Press Me" />
+        android:text="@string/button_text" />
 
     <CheckBox
         android:id="@+id/check"
@@ -46,9 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="end"
-        android:text="Check this out!" />
+        android:text="@string/checkbox_text" />
 
     <EditText
+        android:id="@+id/editbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

@@ -9,7 +9,7 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I love Android"
+        android:text="@string/original_text"
         android:textSize="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -26,7 +26,7 @@
         android:id="@+id/onoff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch on/off"
+        android:text="@string/switch_onoff"
         app:layout_constraintTop_toBottomOf="@id/text"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -34,7 +34,7 @@
         android:id="@+id/pressbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press Me"
+        android:text="@string/button_text"
         app:layout_constraintTop_toBottomOf="@+id/flag"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -42,7 +42,7 @@
         android:id="@+id/check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check this out!"
+        android:text="@string/checkbox_text"
         app:layout_constraintEnd_toEndOf="@+id/flag"
         app:layout_constraintTop_toBottomOf="@+id/flag"/>
 

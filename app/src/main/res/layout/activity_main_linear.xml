@@ -24,14 +24,14 @@
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I love Android"
+                android:text="@string/original_text"
                 android:textSize="30dp"/>
 
             <Switch
                 android:id="@+id/onoff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Switch on/off" />
+                android:text="@string/switch_onoff" />
 
         </LinearLayout>
 
@@ -52,7 +52,7 @@
             android:id="@+id/pressbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Press Me" />
+            android:text="@string/button_text" />
 
         <View
             android:layout_width="0dp"
@@ -63,14 +63,15 @@
             android:id="@+id/check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check this out!"
+            android:text="@string/checkbox_text"
             />
 
     </LinearLayout>
 
     <EditText
+        android:id="@+id/editbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="I love Android" />
+        android:hint="@string/hint" />
 
 </LinearLayout>
