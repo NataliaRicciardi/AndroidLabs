@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             else {
                 message = getResources().getString(R.string.checkbox_off);
             }
-            Snackbar.make(edt,  getResources().getString(R.string.snackbar_message) + " " + message, Snackbar.LENGTH_LONG)
+            Snackbar.make(cb,getResources().getString(R.string.snackbar_message) + " " + message, Snackbar.LENGTH_LONG)
                     .setAction("Undo", click -> cb.setChecked(!b))
                     .show();
         });
