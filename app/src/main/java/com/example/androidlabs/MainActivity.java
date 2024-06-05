@@ -69,12 +69,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 101) {
-            if (resultCode == 0) {
-                // user can enter different name
-                edt.setText("");
-            }
-            else if (resultCode == 1) {
-                // finish and close
+            if (resultCode == 1) {
                 finish();
             }
         }
