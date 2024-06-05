@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="original_text">J\'aime Android</string>
-    <string name="switch_onoff">Interrupteur marche/arrêt</string>
-    <string name="button_text">Pressez-moi</string>
-    <string name="checkbox_text">Regardez ça !</string>
-    <string name="hint">J\'aime Android</string>
-    <string name="toast_message">L\'étiquette a été actualisée.</string>
-    <string name="snackbar_message">La case à cocher est maintenant</string>
-    <string name="checkbox_on">activée</string>
-    <string name="checkbox_off">désactivée</string>
+    <string name="welcome">Bienvenue!</string>
+    <string name="dont">NE M\'APPELEZ PAS COMME ÇA</string>
+    <string name="thanks">MERCI</string>
+    <string name="enter">Entrez votre nom</string>
+    <string name="next">SUIVI</string>
+    <string name="welcome2">Bienvenue</string>
 </resources>

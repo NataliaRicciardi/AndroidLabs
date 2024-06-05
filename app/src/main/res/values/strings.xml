@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="original_text">I love Android</string>
-    <string name="switch_onoff">Switch on/off</string>
-    <string name="button_text">Press Me</string>
-    <string name="checkbox_text">Check this out!</string>
-    <string name="hint">I love Android</string>
-    <string name="toast_message">Label has been updated.</string>
-    <string name="snackbar_message">Checkbox is now</string>
-    <string name="checkbox_on">on</string>
-    <string name="checkbox_off">off</string>
+    <string name="welcome">Welcome!</string>
+    <string name="dont">DON\'T CALL ME THAT</string>
+    <string name="thanks">THANK YOU</string>
+    <string name="enter">Enter your name</string>
+    <string name="next">NEXT</string>
+    <string name="welcome2">Welcome</string>
 </resources>
