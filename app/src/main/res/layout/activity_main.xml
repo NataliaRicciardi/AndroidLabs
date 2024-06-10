@@ -29,19 +29,19 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="Type Here" />
+            android:hint="@string/hint" />
 
         <Switch
             android:id="@+id/urgent"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:hint="Urgent" />
+            android:hint="@string/urgent" />
 
         <Button
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="ADD" />
+            android:text="@string/add" />
 
 
     </LinearLayout>

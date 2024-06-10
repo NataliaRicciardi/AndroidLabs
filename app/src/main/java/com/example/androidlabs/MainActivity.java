@@ -1,7 +1,6 @@
 package com.example.androidlabs;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -80,25 +79,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void showDeleteDialog(int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Do you want to delete this?");
-        builder.setMessage("The selected row is: " + position);
+        builder.setTitle(getResources().getString(R.string.deletetitle));
+        builder.setMessage(getResources().getString(R.string.selected) + " " + position);
 
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                toDoList.remove(position);
-                adapter.notifyDataSetChanged();
-            }
+        builder.setPositiveButton(getResources().getString(R.string.yes), (dialog, which) -> {
+            toDoList.remove(position);
+            adapter.notifyDataSetChanged();
         });
-        builder.setNegativeButton("No", null);
+        builder.setNegativeButton(getResources().getString(R.string.no), null);
         builder.show();
     }
 
 }
 
 class ToDoItem {
-    private String text;
-    private boolean isUrgent;
+    private final String text;
+    private final boolean isUrgent;
 
     public ToDoItem(String text, boolean isUrgent) {
         this.text = text;
@@ -117,8 +113,8 @@ class ToDoItem {
 class ToDoAdapter extends BaseAdapter {
 
     private Context context;
-    private List<ToDoItem> toDoList;
-    private LayoutInflater inflater;
+    private final List<ToDoItem> toDoList;
+    private final LayoutInflater inflater;
 
     public ToDoAdapter(Context context, List<ToDoItem> toDoList) {
         this.context = context;

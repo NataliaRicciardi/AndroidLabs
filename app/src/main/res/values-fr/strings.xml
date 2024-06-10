@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="welcome">Bienvenue!</string>
-    <string name="dont">NE M\'APPELEZ PAS COMME ÇA</string>
-    <string name="thanks">MERCI</string>
-    <string name="enter">Entrez votre nom</string>
-    <string name="next">SUIVI</string>
-    <string name="welcome2">Bienvenue</string>
+    <string name="hint">Type ici</string>
+    <string name="urgent">Urgent</string>
+    <string name="add">AJOUTER</string>
+    <string name="deletetitle">Voulez-vous effacer ceci?</string>
+    <string name="selected">La ligne sélectionnée est:</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
 </resources>
