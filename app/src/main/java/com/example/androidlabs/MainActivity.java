@@ -143,16 +143,16 @@ public class MainActivity extends AppCompatActivity {
         int itemColIndex = results.getColumnIndex(MyOpener.COL_ITEM);
         int idColIndex = results.getColumnIndex(MyOpener.COL_ID);
 
-        results.moveToFirst(); // set cursor to first result
+        if (results.moveToFirst()) { // Set cursor to the first result
+            do {
+                String item = results.getString(itemColIndex);
+                int urgent = results.getInt(urgentColIndex);
+                long id = results.getLong(idColIndex);
 
-        while (results.moveToNext()) {
-            String item = results.getString(itemColIndex);
-            int urgent = results.getInt(urgentColIndex);
-            long id = results.getLong(idColIndex);
+                boolean isUrgent = urgent == 1;
 
-            boolean isUrgent = urgent == 1;
-
-            toDoList.add(new ToDoItem(id, item, isUrgent));
+                toDoList.add(new ToDoItem(id, item, isUrgent));
+            } while (results.moveToNext()); // Move to the next result
         }
 
         results.close();
