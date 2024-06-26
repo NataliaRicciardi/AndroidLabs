@@ -35,10 +35,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageView catImageView = findViewById(R.id.catImageView);
-        ProgressBar progressBar = findViewById(R.id.progressBar);
-        new CatImages(catImageView, progressBar).execute();
-
         startCatImagesTask();
 
     }
