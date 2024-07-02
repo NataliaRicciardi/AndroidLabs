@@ -48,23 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
         listview.setOnItemClickListener(
                 (parent, view, position, id) -> {
+                    FrameLayout frame = findViewById(R.id.frame);
+                    JSONObject character = (JSONObject) charAdapter.getItem(position);
+
                     try {
-                        JSONObject character = characters.getJSONObject(position);
-                        String name = character.getString("name");
-                        String height = character.getString("height");
-                        String mass = character.getString("mass");
-
-                        FrameLayout frame = findViewById(R.id.frame);
-
                         if (frame == null) {
+                            // Phone - start EmptyActivity
                             Intent intent = new Intent(MainActivity.this, EmptyActivity.class);
-                            intent.putExtra("name", name);
-                            intent.putExtra("height", height);
-                            intent.putExtra("mass", mass);
+                            intent.putExtra("name", character.getString("name"));
+                            intent.putExtra("height", character.getString("height"));
+                            intent.putExtra("mass", character.getString("mass"));
                             startActivity(intent);
-                        }
-                        else {
-                            DetailsFragment fragment = DetailsFragment.newInstance(name, height, mass);
+                        } else {
+                            // Tablet - use FragmentManager
+                            DetailsFragment fragment = DetailsFragment.newInstance(
+                                    character.getString("name"),
+                                    character.getString("height"),
+                                    character.getString("mass"));
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.frame, fragment)
                                     .commit();
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     catch (Exception e) {
                         throw new RuntimeException(e);
                     }
+
                 }
         );
 
