@@ -13,12 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        <include
+            layout="@layout/toolbar" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,13 +27,7 @@
 
 
     <!-- Navigation Drawer -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        android:theme="@style/NavigationViewTheme"
-        app:menu="@menu/menu" />
+    <include
+        layout="@layout/navigation_drawer"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

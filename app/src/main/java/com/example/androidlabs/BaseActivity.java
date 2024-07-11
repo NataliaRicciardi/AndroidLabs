@@ -18,7 +18,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
 public class BaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-    private DrawerLayout drawerLayout;
+    public DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
 
     @Override
@@ -48,6 +48,9 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_home) {
             intent = new Intent(this, MainActivity.class);
+        }
+        else if (id == R.id.dad_joke) {
+            intent = new Intent(this, DadJoke.class);
         }
         else if (id == R.id.exit) {
             finishAffinity();
