@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">AndroidLabs</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="dad_joke">A friend of mine is known for sweeping girls off their feet. He’s an extremely aggressive janitor.</string>
+    <string name="app_name">Messages</string>
+
 </resources>
